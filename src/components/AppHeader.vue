@@ -6,17 +6,40 @@ export default {
 
 <template lang="">
   <header>
-    <div>
+    <div class="header-container">
       <div class="logo" >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde tempora cum voluptas eligendi cumque, praesentium distinctio porro repellat sequi, eius accusamus consectetur, eum impedit. Nobis illum quae similique ab.
+       <img src="../assets/img/dc-logo.png" alt="">
       </div>
       <div class="navbar" >
-
+        <ul>
+          <li>
+            ciao
+          </li>
+        </ul>
       </div>
     </div>
   </header>
 </template>
 
-<style lang="">
-  
+<style lang="scss">
+@use '../styles/partials/mixins' as*;
+@use '../styles/generals' as*;
+  header{
+    height: 150px;
+    background-color: red;
+  }
+
+  .header-container{
+    width: 70%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+  }
+  .logo, .navbar{
+    margin: 0;
+  }
+
+
 </style>
