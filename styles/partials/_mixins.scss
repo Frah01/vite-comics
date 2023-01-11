@@ -3,6 +3,13 @@
     color: rgb(167, 167, 167);
 }
 
+@mixin my-list-header {
+    list-style-type: none;
+    font-weight: bold;
+    display: flex;
+    color: rgb(61, 61, 61);
+}
+
 @mixin my-button {
     background-color: transparent;
     border: 2px solid rgb(83, 83, 248);

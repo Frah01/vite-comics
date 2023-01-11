@@ -110,14 +110,13 @@ export default {
 @use '../styles/partials/mixins' as*;
   footer{
     width: 100%;
-    background-color: orange;
+    background-color: rgb(22, 22, 22);
     height: 300px;
   }
   .footer-container{
     width: 70%;
     height: 100%;
     display: flex;
-    background-color: orange;
   }
   .col-50{
     width: 50%;

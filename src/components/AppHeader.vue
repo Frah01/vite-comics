@@ -1,6 +1,52 @@
 <script>
 export default {
-    name: 'AppHeader'
+    name: 'AppHeader',
+    data(){
+      return{
+        list:[
+          {
+            item: 'CHARACTERS',
+            state: false
+          },
+          {
+            item: 'COMICS',
+            state: false
+          },
+          {
+            item: 'MOVIES',
+            state: false
+          },
+          {
+            item: 'TV',
+            state: false
+          },
+          {
+            item: 'GAMES',
+            state: false
+          },
+          {
+            item: 'COLLECTIBLES',
+            state: false
+          },
+          {
+            item: 'VIDEOS',
+            state: false
+          },
+          {
+            item: 'FANS',
+            state: false
+          },
+          {
+            item: 'NEWS',
+            state: false
+          },
+          {
+            item: 'SHOP',
+            state: false
+          },
+        ]
+      }
+    }
 }
 </script>
 
@@ -11,9 +57,9 @@ export default {
        <img src="../assets/img/dc-logo.png" alt="">
       </div>
       <div class="navbar" >
-        <ul>
-          <li>
-            ciao
+        <ul class="list-header">
+          <li v-for="(items, index) in list" :key="index">
+            {{items.item}}
           </li>
         </ul>
       </div>
@@ -49,5 +95,11 @@ export default {
     color: white;
   }
 
+.list-header{
+  @include my-list-header
+}
+.list-header li{
+ padding: 0px 5px;
+}
 
 </style>
