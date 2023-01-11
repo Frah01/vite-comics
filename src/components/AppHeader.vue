@@ -19,6 +19,9 @@ export default {
       </div>
     </div>
   </header>
+  <div class="second-header-section" >
+    <h1>content goes here</h1>
+  </div>
 </template>
 
 <style lang="scss">
@@ -39,6 +42,12 @@ export default {
   }
   .logo, .navbar{
     margin: 0;
+  }
+
+  .second-header-section{
+    height: 80px;
+    background-color: black;
+    color: white;
   }
 
 
