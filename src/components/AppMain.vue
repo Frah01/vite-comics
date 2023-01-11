@@ -1,7 +1,8 @@
 <script>
-export default {
-  
+  export default {
+    name: 'AppMain'
 }
+
 </script>
 
 <template lang="">
