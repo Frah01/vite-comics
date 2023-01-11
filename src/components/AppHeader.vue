@@ -49,7 +49,6 @@ export default {
     }
 }
 </script>
-
 <template lang="">
   <header>
     <div class="header-container">
@@ -70,7 +69,6 @@ export default {
     <h1>content goes here</h1>
   </div>
   </div>
- 
 </template>
 
 <style lang="scss" scoped>
@@ -80,7 +78,6 @@ export default {
     height: 150px;
 
   }
-
   .header-container{
     width: 70%;
     display: flex;
@@ -91,7 +88,6 @@ export default {
   .logo, .navbar{
     margin: 0;
   }
-
   .container-second-header-section{
   width: 100%;
   background-color: black;
@@ -102,14 +98,10 @@ export default {
  
     color: white;
   }
-
 .list-header{
   @include my-list-header
 }
 .list-header li{
  padding: 0px 5px;
 }
-
-
-
 </style>

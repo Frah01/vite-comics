@@ -4,7 +4,6 @@
 }
 
 </script>
-
 <template lang="">
   <div class="container">
     <div class="content-container" >
@@ -31,7 +30,6 @@
     </div>
   </div>
 </template>
-
 <style lang="scss">
   .container{
     width: 100%;
@@ -48,7 +46,6 @@
     display: flex;
     align-items: center;
   }
-
   .content-container img{
     width: 50px;
   }
