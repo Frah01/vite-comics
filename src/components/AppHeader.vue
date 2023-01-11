@@ -29,12 +29,11 @@ export default {
 @use '../styles/generals' as*;
   header{
     height: 150px;
-    background-color: red;
+
   }
 
   .header-container{
     width: 70%;
-    background-color: green;
     display: flex;
     align-items: center;
     justify-content: space-around;

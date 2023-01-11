@@ -40,14 +40,11 @@
   }
   .content-container{
     width: 70%;
-    background-color: grey;
     height: 100%;
     display: flex;
   }
   .col-2{
     width: calc(100% / 5);
-    background-color: orange;
-    height: 100%;
     display: flex;
     align-items: center;
   }
