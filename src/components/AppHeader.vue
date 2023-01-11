@@ -24,7 +24,7 @@ export default {
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../styles/partials/mixins' as*;
 @use '../styles/generals' as*;
   header{
@@ -45,7 +45,7 @@ export default {
   }
 
   .second-header-section{
-    height: 80px;
+    height: 180px;
     background-color: black;
     color: white;
   }
