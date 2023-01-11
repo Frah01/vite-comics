@@ -1,0 +1,12 @@
+@mixin my-list {
+    list-style-type: none;
+    color: rgb(167, 167, 167);
+}
+
+@mixin my-button {
+    background-color: transparent;
+    border: 2px solid rgb(83, 83, 248);
+    color: white;
+    padding: 5px 15px;
+    font-weight: bold;
+}

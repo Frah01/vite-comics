@@ -36,7 +36,7 @@ export default {
     width: 70%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 100%;
   }
   .logo, .navbar{
