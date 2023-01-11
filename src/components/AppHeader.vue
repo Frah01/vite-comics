@@ -65,9 +65,12 @@ export default {
       </div>
     </div>
   </header>
-  <div class="second-header-section" >
+  <div class="container-second-header-section" >
+    <div class="second-header-section" >
     <h1>content goes here</h1>
   </div>
+  </div>
+ 
 </template>
 
 <style lang="scss" scoped>
@@ -89,9 +92,14 @@ export default {
     margin: 0;
   }
 
+  .container-second-header-section{
+  width: 100%;
+  background-color: black;
+}
   .second-header-section{
+    width: 70%;
     height: 180px;
-    background-color: black;
+ 
     color: white;
   }
 
@@ -101,5 +109,7 @@ export default {
 .list-header li{
  padding: 0px 5px;
 }
+
+
 
 </style>
