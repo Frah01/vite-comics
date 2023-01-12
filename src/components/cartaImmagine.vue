@@ -22,6 +22,7 @@ export default {
     .card{
         width: 130px;
        margin: 40px 0px;
+       text-transform: uppercase;
        h4{
         color: white;
         word-break: break-all;
