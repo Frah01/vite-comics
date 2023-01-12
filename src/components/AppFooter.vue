@@ -1,7 +1,27 @@
 <script>
 export default {
     name: 'AppFooter',
-    
+    data(){
+      return{
+        socials: [
+          {
+            logo: 'footer-facebook.png'
+          },
+          {
+            logo: 'footer-periscope.png'
+          },
+          {
+            logo: 'footer-pinterest.png'
+          },
+          {
+            logo: 'footer-twitter.png'
+          },
+          {
+            logo: 'footer-youtube.png'
+          },
+        ]
+      }
+    }
 }
 </script>
 
@@ -130,6 +150,7 @@ export default {
   footer{
     width: 100%;
     background-image: url(../assets/img/footer-bg.jpg);
+    background-size: cover;
   }
   .footer-container{
     width: 70%;
