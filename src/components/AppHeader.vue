@@ -146,7 +146,10 @@ export default {
   <div class="container-second-header-section" >
     <div class="second-header-section" >
       <div class="row-second-header-section" >
-        <imgCard v-for="(item,index) in cards" :card="thumb" ></imgCard>
+        <div class="col" v-for="(item,index) in cards" :key="index" >
+          <imgCard :image="item.thumb" :titolo="item.series"></imgCard>
+        </div>
+        
 
       </div>
     </div>
@@ -160,6 +163,7 @@ export default {
     height: 150px;
 
   }
+ 
   .header-container{
     width: 70%;
     display: flex;
@@ -172,12 +176,12 @@ export default {
   }
   .container-second-header-section{
   width: 100%;
-  background-color: black;
+  background-color: rgba(28,28,28,255);
 }
   .second-header-section{
     width: 70%;
-    height: 180px;
-    color: white;
+    
+    
   }
 
   .row-second-header-section{
