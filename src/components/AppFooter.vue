@@ -110,7 +110,7 @@ export default {
 @use '../styles/partials/mixins' as*;
   footer{
     width: 100%;
-    background-color: rgb(22, 22, 22);
+    background-image: url(../assets/img/footer-bg.jpg);
     height: 300px;
   }
   .footer-container{
