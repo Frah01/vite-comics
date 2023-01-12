@@ -1,5 +1,9 @@
 <script>
+import imgCard from '../components/cartaImmagine.vue';
 export default {
+  components: {
+    imgCard,
+  },
     name: 'AppHeader',
     data(){
       return{
@@ -44,7 +48,16 @@ export default {
             item: 'SHOP',
             state: false
           },
-        ]
+        ],
+        immagine_1:{
+          name: 'marvel',
+          ciao: 10
+        },
+        immagine_2:{
+          name: 'marvello',
+          ciao: 12
+        },
+
       }
     }
 }
@@ -66,8 +79,19 @@ export default {
   </header>
   <div class="container-second-header-section" >
     <div class="second-header-section" >
-    <h1>content goes here</h1>
-  </div>
+      <div class="row-second-header-section" >
+        <imgCard :card="immagine_1" ></imgCard>
+        <imgCard :card="immagine_2"></imgCard>
+        <imgCard :card="immagine_2"></imgCard>
+        <imgCard :card="immagine_2"></imgCard>
+        <imgCard :card="immagine_2"></imgCard>
+        <imgCard :card="immagine_2"></imgCard>
+        <imgCard :card="immagine_2"></imgCard>
+        <imgCard :card="immagine_2"></imgCard>
+        <imgCard :card="immagine_2"></imgCard>
+
+      </div>
+    </div>
   </div>
 </template>
 
@@ -95,8 +119,12 @@ export default {
   .second-header-section{
     width: 70%;
     height: 180px;
- 
     color: white;
+  }
+
+  .row-second-header-section{
+    display: flex;
+    flex-wrap: wrap;
   }
 .list-header{
   @include my-list-header
