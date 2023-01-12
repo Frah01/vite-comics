@@ -135,11 +135,9 @@ export default {
     <div class="col-50" >
       <div class="content-second-section-footer">
         <h3>FOLLOW US</h3>
-        <img src="../assets/img/footer-facebook.png" alt="">
-        <img src="../assets/img/footer-periscope.png" alt="">
-        <img src="../assets/img/footer-pinterest.png" alt="">
-        <img src="../assets/img/footer-twitter.png" alt="">
-        <img src="../assets/img/footer-youtube.png" alt="">
+        <div v-for="(item,index) in socials" :key="index">
+          <img :src="`/src/assets/img/${item.logo}`">
+        </div>
       </div>
     </div>
   </div>
