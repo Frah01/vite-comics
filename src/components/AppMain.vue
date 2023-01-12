@@ -45,6 +45,9 @@
     width: calc(100% / 5);
     display: flex;
     align-items: center;
+    h3{
+      font-size: 16px;
+    }
   }
   .content-container img{
     width: 50px;
@@ -52,4 +55,6 @@
   .content-container h3{
     color: white;
   }
+
+  
 </style>

@@ -103,5 +103,15 @@ export default {
 }
 .list-header li{
  padding: 0px 5px;
+
+ &.active{
+  border-bottom: 3px solid blue
+ }
 }
+
+.active-bar{
+    height: 10px;
+    width: 30px;
+    background-color: blue;
+  }
 </style>

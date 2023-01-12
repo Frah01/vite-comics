@@ -109,9 +109,7 @@ export default {
   </footer>
   <div class="second-section-footer" >
     <div class="col-50" >
-      <div class="" >
         <button class="button">SING-UP NOW!</button>
-      </div>
     </div>
     <div class="col-50" >
       <div class="content-second-section-footer">
@@ -148,7 +146,7 @@ export default {
   }
 
   .second-section-footer .col-50 {
-    align-items: center
+    align-items: center;
   }
 
   .list{
@@ -166,9 +164,9 @@ export default {
 
   .second-section-footer{
     display: flex;
-    width: 100%;
-    height: 107px;
+    justify-content: center;
     background-color: rgba(48,48,48,255);
+    padding: 20px 0px;
   }
 
   .button{
