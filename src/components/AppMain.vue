@@ -1,32 +1,43 @@
 <script>
   export default {
-    name: 'AppMain'
+    name: 'AppMain',
+    data(){
+      return{
+        images:[
+          {
+            image:"buy-comics-digital-comics.png",
+            label: 'DIGITAL COMICS',
+          },
+          {
+            image:"buy-comics-merchandise.png",
+            label: 'MERCHANDISE',
+          },
+          {
+            image:"buy-comics-subscriptions.png",
+            label: 'SUBSCRIPTION',
+          },
+          {
+            image:"buy-comics-shop-locator.png",
+            label:  'COMIC SHOP LOCATOR',
+          },
+          {
+            image:"buy-dc-power-visa.svg",
+            label: 'DC POWER VISA',
+          },
+        ]
+      }
+    }
 }
 
 </script>
 <template lang="">
   <div class="container">
     <div class="content-container" >
-      <div class="col-2" >
-        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-        <h3>DIGITAL COMICS</h3>
+      <div class="col-2" v-for="(item,index) in images" :key="index" >
+        <img :src="`/src/assets/img/${item.image}`">
+        <h3>{{item.label}}</h3>
       </div>
-      <div class="col-2" >
-        <img src="../assets/img/buy-comics-merchandise.png" alt="">
-        <h3>MERCHANDISE</h3>
-      </div>
-      <div class="col-2" >
-        <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-        <h3>SUBSCRIPTION</h3>
-      </div>
-      <div class="col-2" >
-        <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-        <h3>COMIC SHOP LOCATOR</h3>
-      </div>
-      <div class="col-2" >
-        <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-        <h3>DC POWER VISA</h3>
-      </div>
+     
     </div>
   </div>
 </template>
@@ -35,6 +46,7 @@
     width: 100%;
     background-color: rgba(2,130,249,255);
     height: 200px;
+    display: flex;
   }
   .content-container{
     width: 70%;
@@ -46,7 +58,7 @@
     display: flex;
     align-items: center;
     h3{
-      font-size: 16px;
+      font-size: 13px;
     }
   }
   .content-container img{

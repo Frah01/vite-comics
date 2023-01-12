@@ -1,6 +1,7 @@
 <script>
 export default {
-    name: 'AppFooter'
+    name: 'AppFooter',
+    
 }
 </script>
 
@@ -128,7 +129,6 @@ export default {
 @use '../styles/partials/mixins' as*;
   footer{
     width: 100%;
-
     background-image: url(../assets/img/footer-bg.jpg);
   }
   .footer-container{
