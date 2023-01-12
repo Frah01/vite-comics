@@ -123,8 +123,7 @@ export default {
             </li>
           </ul>
         </div>
-        <div class="col-50">
-          <img src="../assets/img/dc-logo-bg.png" alt="">
+        <div class="col-50-dx">
         </div>
     </div>
   </footer>
@@ -154,6 +153,8 @@ export default {
     width: 70%;
     height: 100%;
     display: flex;
+    
+    
 
   }
   .col-50{
@@ -161,6 +162,13 @@ export default {
     height: 100%;
     display: flex;
     align-items: flex-start;
+  }
+
+  .col-50-dx{
+    background-repeat: no-repeat;
+    background-image: url(../assets/img/dc-logo-bg.png);
+    width: 50%;
+  
     
   }
 
@@ -171,6 +179,9 @@ export default {
   .list{
     @include my-list;
     margin: 50px 0px;
+    h2{
+      color: white
+    }
   }
 
   footer li {
@@ -182,6 +193,7 @@ export default {
     justify-content: center;
     background-color: rgba(48,48,48,255);
     padding: 20px 0px;
+
   }
 
   .button{
