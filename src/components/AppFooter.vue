@@ -33,31 +33,52 @@ export default {
             <li>
               News
             </li>
+            <li>
+              <h2>SHOP</h2>
+            </li>
+            <li>
+              Shop DC
+            </li>
+            <li>
+              Shop DC Collectibles
+            </li>
           </ul>
           <ul class="list">
             <li>
               <h2>DC</h2>
             </li>
             <li>
-              Characters
+              Terms Of Use
             </li>
             <li>
-              Comics
+              Privacy policy (New)
             </li>
             <li>
-              Movies
+              Ad Choices
             </li>
             <li>
-              TV
+              Advertising
             </li>
             <li>
-              Games
+              Jobs
             </li>
             <li>
-              Videos
+              Subscriptions
             </li>
             <li>
-              News
+              Talent Workshops
+            </li>
+            <li>
+              CPSC Certificates
+            </li>
+            <li>
+              Ratings
+            </li>
+            <li>
+              Shop Help
+            </li>
+            <li>
+              Contact Us
             </li>
           </ul>
           <ul class="list">
@@ -65,25 +86,19 @@ export default {
               <h2>SITES</h2>
             </li>
             <li>
-              Characters
+              DC
             </li>
             <li>
-              Comics
+              MAD Magazine
             </li>
             <li>
-              Movies
+              DC Kids
             </li>
             <li>
-              TV
+              DC Universe
             </li>
             <li>
-              Games
-            </li>
-            <li>
-              Videos
-            </li>
-            <li>
-              News
+              DC Power Visa
             </li>
           </ul>
         </div>
@@ -101,6 +116,11 @@ export default {
     <div class="col-50" >
       <div class="content-second-section-footer">
         <h3>FOLLOW US</h3>
+        <img src="../assets/img/footer-facebook.png" alt="">
+        <img src="../assets/img/footer-periscope.png" alt="">
+        <img src="../assets/img/footer-pinterest.png" alt="">
+        <img src="../assets/img/footer-twitter.png" alt="">
+        <img src="../assets/img/footer-youtube.png" alt="">
       </div>
     </div>
   </div>
@@ -110,23 +130,30 @@ export default {
 @use '../styles/partials/mixins' as*;
   footer{
     width: 100%;
+
     background-image: url(../assets/img/footer-bg.jpg);
-    height: 300px;
   }
   .footer-container{
     width: 70%;
     height: 100%;
     display: flex;
+
   }
   .col-50{
     width: 50%;
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    
+  }
+
+  .second-section-footer .col-50 {
+    align-items: center
   }
 
   .list{
     @include my-list;
+    margin: 50px 0px;
   }
 
   footer li {
@@ -134,14 +161,14 @@ export default {
   }
   
   footer img{
-    width: 75%;
+
   }
 
   .second-section-footer{
     display: flex;
     width: 100%;
     height: 107px;
-    background-color: black;
+    background-color: rgba(48,48,48,255);
   }
 
   .button{
@@ -150,8 +177,13 @@ export default {
 
   .content-second-section-footer{
     display: flex;
+    align-items: center;
     h3{
-      color: rgb(57, 57, 252);
+      color: rgba(5,123,215,255);
+      margin: 0px 10px;
+    }
+    img{
+      margin: 0px 10px;
     }
   }
 

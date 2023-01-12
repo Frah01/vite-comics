@@ -33,7 +33,7 @@
 <style lang="scss">
   .container{
     width: 100%;
-    background-color: rgb(107, 107, 255);
+    background-color: rgba(2,130,249,255);
     height: 200px;
   }
   .content-container{
