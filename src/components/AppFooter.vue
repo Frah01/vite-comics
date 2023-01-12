@@ -177,10 +177,6 @@ export default {
     padding: 5px;
   }
   
-  footer img{
-
-  }
-
   .second-section-footer{
     display: flex;
     justify-content: center;
