@@ -150,7 +150,7 @@ export default {
     background-size: cover;
   }
   .footer-container{
-    width: 70%;
+    width: 80%;
     height: 100%;
     display: flex;
     
@@ -178,14 +178,15 @@ export default {
 
   .list{
     @include my-list;
-    margin: 50px 0px;
+    margin: 50px 10px;
+    line-height: 35px;
     h2{
       color: white
     }
   }
 
   footer li {
-    padding: 5px;
+    
   }
   
   .second-section-footer{

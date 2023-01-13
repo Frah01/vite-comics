@@ -49,9 +49,12 @@
     display: flex;
   }
   .content-container{
-    width: 70%;
+    width: 80%;
     height: 100%;
     display: flex;
+    img{
+      margin: 0;
+    }
   }
   .col-2{
     width: calc(100% / 5);
