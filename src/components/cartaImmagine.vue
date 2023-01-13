@@ -21,12 +21,12 @@ export default {
 <style lang="scss">
     .card{
         width: 130px;
-       margin: 40px 5px;
-       text-transform: uppercase;
+        margin: 20px 5px;
+        text-transform: uppercase;
        p{
         color: white;
         word-break: break-all;
-        font-size: 16px;
+        font-size: 10px;
         margin-top: 10px
        }
     }
