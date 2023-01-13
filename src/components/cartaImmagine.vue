@@ -13,7 +13,7 @@ export default {
             <div class="card-img" >
                 <img :src="image" alt="">
             </div>
-            <h4>{{titolo}}</h4> 
+            <p>{{titolo}}</p> 
         </div>
     </div>
 </template>
@@ -21,9 +21,9 @@ export default {
 <style lang="scss">
     .card{
         width: 130px;
-       margin: 40px 0px;
+       margin: 40px 5px;
        text-transform: uppercase;
-       h4{
+       p{
         color: white;
         word-break: break-all;
         font-size: 16px;
